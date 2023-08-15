@@ -1,1 +1,2 @@
-# Lenguajes-de-programacion-Ejercicios
+# Lenguajes de programación
+Ejercicios
