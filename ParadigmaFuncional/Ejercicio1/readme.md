@@ -1,7 +1,13 @@
-# Ejercicio de Filtrado de Cadenas en F#
+# Ejercicio de Desplazamiento de Listas en F#
 
-Este es un ejercicio simple en F# que involucra la creación de una función para filtrar cadenas de texto basadas en una subcadena proporcionada por el usuario.
+Este ejercicio involucra la creación de funciones en F# para desplazar elementos en una lista hacia la izquierda o la derecha, llenando los espacios vacíos con ceros según se indique por el usuario.
 
 ## Descripción
 
-La función `subCadenas` toma una subcadena y una lista de cadenas como entrada y filtra las cadenas que contienen la subcadena como una palabra completa. El ejercicio implica dividir cada cadena en palabras y verificar si alguna de esas palabras es igual a la subcadena buscada.
+Este ejercicio consta de tres funciones principales:
+
+`desplazarIzquierda lista n`: Esta función toma una lista `lista` y un número entero `n` como argumentos y desplaza los elementos de la lista hacia la izquierda `n` posiciones. Los espacios vacíos se llenan con ceros.
+
+`desplazarDerecha lista n`: Esta función toma una lista `lista` y un número entero `n` como argumentos y desplaza los elementos de la lista hacia la derecha `n` posiciones. Los espacios vacíos se llenan con ceros.
+
+`desplazar direccion n lista`: Esta función principal toma tres argumentos: `direccion` (una cadena que puede ser "izq" o "der" para indicar la dirección del desplazamiento), `n` (el número de posiciones a desplazar) y `lista` (la lista de elementos). Dependiendo de la dirección, utiliza las funciones `desplazarIzquierda` o `desplazarDerecha` para realizar el desplazamiento y devuelve la lista resultante.
