@@ -1,7 +1,5 @@
 ﻿module RutaCorta
 
-open Recipientes
-
 // Grafo de prueba con pesos en las aristas
 let grafo = [
     ("i", [["a"; "b"]; ["3"; "6"]]);
@@ -13,7 +11,10 @@ let grafo = [
     ("x", [["c"]; ["3"]])
 ]
 
-
+// Función para verificar si un elemento está en una lista
+let miembro elem lista =
+    List.exists (fun x -> x = elem) lista
+    
 // Función para generar vecinos con pesos
 let rec vecinos nodo grafo =
     match grafo with
