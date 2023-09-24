@@ -45,7 +45,7 @@ filtrarCadenasConSubcadena(Subcadena, ListaEntrada, Filtradas) :-
 % filtrarCadenasConSubcadena("la", ["la casa", "el perrola", "pintando la cerca"], Filtradas).
 
 
-% Forma2: Contando solo las palabras
+% Forma2: Contando las silabas y palabras
 
 estaEnLista(Palabra, ListaPalabras) :-
     member(Palabra, ListaPalabras).
